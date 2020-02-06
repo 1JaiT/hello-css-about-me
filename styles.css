@@ -7,8 +7,8 @@ h1 {
     text-align: left;
 }
 h3 {
-    text-decoration: rgb(176, 61, 199);
-}
+text-decoration-color: rgb(22, 124, 192);}
+
 h3 {
     text-align: left;
 }
@@ -18,10 +18,23 @@ h2 {
 body {
     text-align: right; 
 }
-p{
+p {
 text-align: left;}
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    border: solid;
+    color: lightgrey;
+    background-color: snow;
+}
 
+ul li {
+    padding: 40px 30px;
+    font-weight: bold;
+    color: rgb(22, 124, 192);
+}
 
-
-
+ul li:last-child {
+    border-bottom: none;
+}
