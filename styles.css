@@ -1,95 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300&display=swap');
 
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
   
-
-
-html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;}
-
-
-.header {background-image: src="images/cover.png" 
-}
-
-h1 {
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
-}
-
-h3 {
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
-
-}
-h2 {
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #02162967;
+    transition: all .5s ease;
+  }
+  .sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
-
-}
-body {
-    text-align: right; 
-    font-family: 'Raleway', sans-serif;
-
-}
-p {
-text-align: left;}
-
-
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-
-* {
-  font-family: Raleway;
-}
-
-section {
-  width: 100%;
-  display: inline-block;
-  background: rgb(255, 255, 255);
-  height: 60vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-
-.nav_menu { 
-    overflow: hidden; 
-    background-color: rgb(26, 50, 158); 
-} 
-.nav_menu a { 
-    float: left; 
-    display: block; 
-    color: white; 
-    text-align: center; 
-    padding: 14px 16px; 
-    text-decoration: none; 
-} 
-.nav_menu a:hover { 
-    color: rgb(26, 50, 158); 
-} 
+    background: #0d2c3b57;
+    user-select: none;
+  }
+  .sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgba(255,255,255,.1);
+    transition: .4s;
+  }
+  ul li:hover a{
+    padding-left: 50px;
+  }
+  .sidebar ul a i{
+    margin-right: 16px;
+  }
+  #check{
+    display: none;
+  }
+  label #btn,label #cancel{
+    position: absolute;
+    background: #c21fb4f6;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+  }
+  label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0d3c53;
+    padding: 4px 9px;
+    transition: all .5s ease;
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #check:checked ~ label #cancel{
+    left: 195px;
+  }
+  #check:checked ~ section{
+    margin-left: 250px;
+  }
+  section{
+    background: url(bg.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+  }
   
-.columnA { 
-    float: left; 
-    width: 31%; 
-    padding: 15px; 
-    text-align:justify; 
-    font-family: 'Muli', sans-serif;
-} 
-h2 { 
-    color:rgb(0, 13, 128); 
-    text-align:center; 
-    font-family: 'Raleway', sans-serif;
+  *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Fira Sans Condensed', sans-serif;
+    }
 
-
-} 
-  
-@media screen and (max-width:600px) { 
-    .columnA { 
-        width: 50%; 
-    } 
-} 
-@media screen and (max-width:400px) { 
-    .columnA { 
-        width: 100%; 
-    } 
-} 
-
+    * {
+        font-family: 'Fira Sans Condensed', sans-serif;
+      }
+      
+      section {
+        width: 100%;
+        display: inline-block;
+        background: #e6c7d8;
+        height: 60vh;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+      
+    
+    h1 {
+        text-align: center;
+        font-family: 'Fira Sans Condensed', sans-serif;
+    }
+    
+    h3 {
+        text-align: center;
+        font-family: 'Fira Sans Condensed', sans-serif;
+    
+    }
+    
+    body {
+        background-color: #ede4e9;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Fira Sans Condensed', sans-serif;
+      }
+  .columnA { 
+      float: left; 
+      width: 31%; 
+      padding: 15px; 
+      text-align:justify; 
+      font-family: 'Fira Sans Condensed', sans-serif;
+  }
